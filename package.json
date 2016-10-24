@@ -1,0 +1,21 @@
+{
+  "name": "typedoc-ghpages",
+  "version": "1.0.0",
+  "description": "Typedoc fixer for Github pages.",
+  "main": "bin/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typedoc",
+    "github",
+    "typescript",
+    "pages",
+    "jekyll"
+  ],
+  "author": "lilEzek",
+  "license": "ISC",
+  "dependencies": {
+    "ncp": "^2.0.0"
+  }
+}
