@@ -1,6 +1,6 @@
 # typedoc-ghpages
 
-Fix your TypeDoc files for using with Github Webpages.
+Fix your TypeDoc files for its use with Github Webpages.
 
 ## Usage
 
@@ -27,10 +27,10 @@ TypeDoc is a `documentation generator for TypeScript projects.`
 
 ## Naming problem
 
-This tool generates files whose name begins with _ (underscore). When using
-github's pages tool, those files are ignored.
+TypeDoc tool generates files whose name begins with _ (underscore). When using
+github's pages tool, those files are ignored. 
 
-## This tool
+## This (fix) tool
 
 Renames every file and every reference removing the trailing underscore on each name.
 
