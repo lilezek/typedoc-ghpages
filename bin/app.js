@@ -16,13 +16,16 @@ function recursiveFix(source) {
         if (/\.html$/i.test(source) || /\.js$/i.test(source)) {
             var content = fs.readFileSync(source);
             var sc = content.toString();
-            sc = sc.replace(/modules\/_([^"]+).html/ig, function (match, group) {
+            sc = sc.replace(/modules\/_([^"]+)\.html/ig, function (match, group) {
                 console.log(source);
                 console.log(match);
                 return "modules/" + group + ".html";
-            }).replace(/href="_([^"])+.html/ig, function (match, group) {
+            }).replace(/href="_([^"]+)\.html/ig, function (match, group) {
                 console.log(source);
                 return "href=\"" + group + ".html";
+            }).replace(/classes\/_([^"]+)\.html/ig, function (match, group) {
+                console.log(source);
+                return "/classes\/" + group + ".html";
             });
             fs.writeFileSync(source, sc);
             var newname = source.replace(/\/_/, "/");

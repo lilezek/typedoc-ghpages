@@ -57,7 +57,7 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_.html">&quot;app&quot;</a>
+					<a href="app_.html">&quot;app&quot;</a>
 				</li>
 			</ul>
 			<h1>External module &quot;app&quot;</h1>
@@ -74,14 +74,14 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_.html#cp" class="tsd-kind-icon">cp</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_.html#dir" class="tsd-kind-icon">dir</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="app_.html#dir" class="tsd-kind-icon">dir</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="app_.html#rm" class="tsd-kind-icon">rm</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_.html#recursivefix" class="tsd-kind-icon">recursive<wbr>Fix</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="app_.html#recursivefix" class="tsd-kind-icon">recursive<wbr>Fix</a></li>
 							</ul>
 						</section>
 					</div>
@@ -90,22 +90,22 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="cp" class="tsd-anchor"></a>
-					<h3>cp</h3>
-					<div class="tsd-signature tsd-kind-icon">cp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ChildProcess</span><span class="tsd-signature-symbol"> =&nbsp;spawn.spawn(&#x27;cp&#x27;, [&#x27;-r&#x27;, dir, &#x27;docs/&#x27;])</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in app.ts:35</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="dir" class="tsd-anchor"></a>
 					<h3>dir</h3>
 					<div class="tsd-signature tsd-kind-icon">dir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;path.join(process.cwd(), process.argv[2])</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in app.ts:13</li>
+							<li>Defined in <a href="https://github.com/lilezek/typedoc-ghpages/blob/25c5b4d/bin/app.ts#L13">app.ts:13</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="rm" class="tsd-anchor"></a>
+					<h3>rm</h3>
+					<div class="tsd-signature tsd-kind-icon">rm<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ChildProcess</span><span class="tsd-signature-symbol"> =&nbsp;spawn.spawn(&#x27;rm&#x27;, [&#x27;-rf&#x27;, &#x27;docs/&#x27;]).on(&#x27;close&#x27;, () &#x3D;&gt; {var cp &#x3D; spawn.spawn(&#x27;cp&#x27;, [&#x27;-r&#x27;, dir, &#x27;docs/&#x27;]);cp.on(&#x27;close&#x27;, () &#x3D;&gt; {recursiveFix(&#x27;docs/&#x27;);})})</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/lilezek/typedoc-ghpages/blob/25c5b4d/bin/app.ts#L41">app.ts:41</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -122,7 +122,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in app.ts:15</li>
+									<li>Defined in <a href="https://github.com/lilezek/typedoc-ghpages/blob/25c5b4d/bin/app.ts#L15">app.ts:15</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -144,20 +144,20 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_.html">"app"</a>
+						<a href="app_.html">"app"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_.html#cp" class="tsd-kind-icon">cp</a>
+						<a href="app_.html#dir" class="tsd-kind-icon">dir</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_.html#dir" class="tsd-kind-icon">dir</a>
+						<a href="app_.html#rm" class="tsd-kind-icon">rm</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_.html#recursivefix" class="tsd-kind-icon">recursive<wbr>Fix</a>
+						<a href="app_.html#recursivefix" class="tsd-kind-icon">recursive<wbr>Fix</a>
 					</li>
 				</ul>
 			</nav>
