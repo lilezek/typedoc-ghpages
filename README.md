@@ -1,6 +1,8 @@
 # typedoc-ghpages
 
-Fix your TypeDoc files for its use with Github Webpages.
+Fix your TypeDoc files for its use with Github Webpages. There is an alternative solution ignoring jekyll configuration: 
+
+https://github.com/blog/572-bypassing-jekyll-on-github-pages
 
 ## Usage
 
@@ -33,6 +35,7 @@ github's pages tool, those files are ignored.
 ## This (fix) tool
 
 Renames every file and every reference removing the trailing underscore on each name.
+
 
 ## License
 
